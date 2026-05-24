@@ -720,326 +720,327 @@
       { id: 'satisfied', keywords: ['满足', '满意', 'satisfied', 'content'], emoji: '☺️', label: '满足' }
     ];
 
+    // ========== 歌曲数据库（含3个备选版本） ========== 开始修改位置3
     const SONG_DB = {
       depressed: [
-        { title: 'Fix You', artist: 'Coldplay' },
-        { title: 'Someone Like You', artist: 'Adele' },
-        { title: 'Yesterday', artist: 'The Beatles' },
-        { title: 'Stay', artist: 'Rihanna' },
-        { title: 'Skinny Love', artist: 'Bon Iver' },
-        { title: 'The Night We Met', artist: 'Lord Huron' },
-        { title: 'Holocene', artist: 'Bon Iver' },
-        { title: 'Skin & Bones', artist: 'Marian Hill' },
-        { title: 'Let It Be', artist: 'The Beatles' },
-        { title: 'Hallelujah', artist: 'Jeff Buckley' },
-        { title: 'Creep', artist: 'Radiohead' },
-        { title: 'Mad World', artist: 'Gary Jules' },
-        { title: 'Everybody Hurts', artist: 'R.E.M.' },
-        { title: 'Hurt', artist: 'Johnny Cash' },
-        { title: 'The A Team', artist: 'Ed Sheeran' },
-        { title: 'Make You Feel My Love', artist: 'Adele' },
-        { title: 'Say Something', artist: 'A Great Big World' },
-        { title: 'Young and Beautiful', artist: 'Lana Del Rey' },
-        { title: 'Video Games', artist: 'Lana Del Rey' },
-        { title: 'All Too Well', artist: 'Taylor Swift' },
-        { title: 'Chandelier', artist: 'Sia' },
-        { title: 'Breathe Me', artist: 'Sia' },
-        { title: 'Gravity', artist: 'Sara Bareilles' },
-        { title: 'River', artist: 'Leon Bridges' },
-        { title: 'River Flows in You', artist: 'Yiruma' },
-        { title: 'Experience', artist: 'Ludovico Einaudi' },
-        { title: 'Una Mattina', artist: 'Ludovico Einaudi' },
-        { title: 'Nuvole Bianche', artist: 'Ludovico Einaudi' },
-        { title: 'Dawn', artist: 'Dario Marianelli' },
-        { title: 'Comptine d\'un autre été', artist: 'Yann Tiersen' }
+        { title: 'Fix You', artist: 'Coldplay', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Someone Like You', artist: 'Adele', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Charlie Puth' }, { artist: 'Our Last Night' }] },
+        { title: 'Yesterday', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Elvis Presley' }, { artist: 'Ray Charles' }] },
+        { title: 'Stay', artist: 'Rihanna', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Jorja Smith' }, { artist: 'Shakira' }] },
+        { title: 'Skinny Love', artist: 'Bon Iver', alternatives: [{ artist: 'Birdy' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'The Night We Met', artist: 'Lord Huron', alternatives: [{ artist: 'Phoebe Bridgers' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Holocene', artist: 'Bon Iver', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'The Piano Guys' }, { artist: 'Our Last Night' }] },
+        { title: 'Skin & Bones', artist: 'Marian Hill', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'The Piano Guys' }, { artist: 'Our Last Night' }] },
+        { title: 'Let It Be', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Elvis Presley' }, { artist: 'Ray Charles' }] },
+        { title: 'Hallelujah', artist: 'Jeff Buckley', alternatives: [{ artist: 'Rufus Wainwright' }, { artist: 'Bon Jovi' }, { artist: 'Boyce Avenue' }] },
+        { title: 'Creep', artist: 'Radiohead', alternatives: [{ artist: 'Vampire Weekend' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Mad World', artist: 'Gary Jules', alternatives: [{ artist: 'Adam Lambert' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Everybody Hurts', artist: 'R.E.M.', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hurt', artist: 'Johnny Cash', alternatives: [{ artist: 'Nine Inch Nails' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'The A Team', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'The Piano Guys' }, { artist: 'Our Last Night' }] },
+        { title: 'Make You Feel My Love', artist: 'Adele', alternatives: [{ artist: 'Bob Dylan' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Say Something', artist: 'A Great Big World', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Young and Beautiful', artist: 'Lana Del Rey', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Video Games', artist: 'Lana Del Rey', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'All Too Well', artist: 'Taylor Swift', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Chandelier', artist: 'Sia', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Breathe Me', artist: 'Sia', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Gravity', artist: 'Sara Bareilles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'River', artist: 'Leon Bridges', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'River Flows in You', artist: 'Yiruma', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Experience', artist: 'Ludovico Einaudi', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Una Mattina', artist: 'Ludovico Einaudi', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Nuvole Bianche', artist: 'Ludovico Einaudi', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Dawn', artist: 'Dario Marianelli', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] },
+        { title: 'Comptine d\'un autre été', artist: 'Yann Tiersen', alternatives: [{ artist: 'The Piano Guys' }, { artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }] }
       ],
       sad: [
-        { title: 'When You\'re Gone', artist: 'Shawn Mendes' },
-        { title: 'Back to December', artist: 'Taylor Swift' },
-        { title: 'Hello', artist: 'Adele' },
-        { title: 'The One That Got Away', artist: 'Katy Perry' },
-        { title: 'Jar of Hearts', artist: 'Christina Perri' },
-        { title: 'Just Give Me a Reason', artist: 'Pink' },
-        { title: 'Set Fire to the Rain', artist: 'Adele' },
-        { title: 'I Will Always Love You', artist: 'Whitney Houston' },
-        { title: 'Because of You', artist: 'Kelly Clarkson' },
-        { title: 'Tears in Heaven', artist: 'Eric Clapton' },
-        { title: 'The Sound of Silence', artist: 'Simon & Garfunkel' },
-        { title: 'Bridge Over Troubled Water', artist: 'Simon & Garfunkel' },
-        { title: 'Scarborough Fair', artist: 'Sarah Brightman' },
-        { title: 'Don\'t Cry', artist: 'Guns N\' Roses' },
-        { title: 'Black', artist: 'Pearl Jam' },
-        { title: 'Hurt', artist: 'Nine Inch Nails' },
-        { title: 'Iris', artist: 'Goo Goo Dolls' },
-        { title: 'Wake Me Up When September Ends', artist: 'Green Day' },
-        { title: 'Perfect', artist: 'Ed Sheeran' },
-        { title: 'Thinking Out Loud', artist: 'Ed Sheeran' },
-        { title: 'Shape of You', artist: 'Ed Sheeran' },
-        { title: 'Castle on the Hill', artist: 'Ed Sheeran' },
-        { title: 'Supermarket Flowers', artist: 'Ed Sheeran' },
-        { title: 'Billie Jean', artist: 'Michael Jackson' },
-        { title: 'Man in the Mirror', artist: 'Michael Jackson' },
-        { title: 'Heal the World', artist: 'Michael Jackson' },
-        { title: 'You Are Not Alone', artist: 'Michael Jackson' },
-        { title: 'Earth Song', artist: 'Michael Jackson' },
-        { title: 'We Are the World', artist: 'USA for Africa' },
-        { title: 'Imagine', artist: 'John Lennon' }
+        { title: 'When You\'re Gone', artist: 'Shawn Mendes', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Back to December', artist: 'Taylor Swift', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hello', artist: 'Adele', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The One That Got Away', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Jar of Hearts', artist: 'Christina Perri', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Just Give Me a Reason', artist: 'Pink', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Set Fire to the Rain', artist: 'Adele', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Will Always Love You', artist: 'Whitney Houston', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Because of You', artist: 'Kelly Clarkson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Tears in Heaven', artist: 'Eric Clapton', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Sound of Silence', artist: 'Simon & Garfunkel', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Bridge Over Troubled Water', artist: 'Simon & Garfunkel', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Scarborough Fair', artist: 'Sarah Brightman', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Don\'t Cry', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Black', artist: 'Pearl Jam', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hurt', artist: 'Nine Inch Nails', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Iris', artist: 'Goo Goo Dolls', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Wake Me Up When September Ends', artist: 'Green Day', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Perfect', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Thinking Out Loud', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Shape of You', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Castle on the Hill', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Supermarket Flowers', artist: 'Ed Sheeran', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Billie Jean', artist: 'Michael Jackson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Man in the Mirror', artist: 'Michael Jackson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Heal the World', artist: 'Michael Jackson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'You Are Not Alone', artist: 'Michael Jackson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Earth Song', artist: 'Michael Jackson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'We Are the World', artist: 'USA for Africa', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Imagine', artist: 'John Lennon', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       anxious: [
-        { title: 'Weightless', artist: 'Marconi Union' },
-        { title: 'Mellotron', artist: 'Moby' },
-        { title: 'Chill Bill', artist: 'Rob Stone' },
-        { title: 'Lust For Life', artist: 'Iggy Pop' },
-        { title: 'Breezeblocks', artist: 'Alt-J' },
-        { title: 'Midnight City', artist: 'M83' },
-        { title: 'Blinding Lights', artist: 'The Weeknd' },
-        { title: 'Levitating', artist: 'Dua Lipa' },
-        { title: 'Don\'t Start Now', artist: 'Dua Lipa' },
-        { title: 'Watermelon Sugar', artist: 'Harry Styles' },
-        { title: 'Adore You', artist: 'Harry Styles' },
-        { title: 'Golden', artist: 'Harry Styles' },
-        { title: 'As It Was', artist: 'Harry Styles' },
-        { title: 'Heat Waves', artist: 'Glass Animals' },
-        { title: 'Gooey', artist: 'Glass Animals' },
-        { title: 'Youth', artist: 'Glass Animals' },
-        { title: 'Dreams', artist: 'Fleetwood Mac' },
-        { title: 'Landslide', artist: 'Fleetwood Mac' },
-        { title: 'Rhiannon', artist: 'Fleetwood Mac' },
-        { title: 'Go Your Own Way', artist: 'Fleetwood Mac' },
-        { title: 'You Make Loving Fun', artist: 'Fleetwood Mac' },
-        { title: 'Tusk', artist: 'Fleetwood Mac' },
-        { title: 'Sara', artist: 'Fleetwood Mac' },
-        { title: 'Little Lies', artist: 'Fleetwood Mac' },
-        { title: 'Gypsy', artist: 'Fleetwood Mac' },
-        { title: 'Sweet Child O\' Mine', artist: 'Guns N\' Roses' },
-        { title: 'November Rain', artist: 'Guns N\' Roses' },
-        { title: 'Patience', artist: 'Guns N\' Roses' },
-        { title: 'Paradise City', artist: 'Guns N\' Roses' },
-        { title: 'Welcome to the Jungle', artist: 'Guns N\' Roses' }
+        { title: 'Weightless', artist: 'Marconi Union', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Mellotron', artist: 'Moby', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Chill Bill', artist: 'Rob Stone', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Lust For Life', artist: 'Iggy Pop', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Breezeblocks', artist: 'Alt-J', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Midnight City', artist: 'M83', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Blinding Lights', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Levitating', artist: 'Dua Lipa', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Don\'t Start Now', artist: 'Dua Lipa', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Watermelon Sugar', artist: 'Harry Styles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Adore You', artist: 'Harry Styles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Golden', artist: 'Harry Styles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'As It Was', artist: 'Harry Styles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Heat Waves', artist: 'Glass Animals', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Gooey', artist: 'Glass Animals', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Youth', artist: 'Glass Animals', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Dreams', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Landslide', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Rhiannon', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Go Your Own Way', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'You Make Loving Fun', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Tusk', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Sara', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Little Lies', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Gypsy', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Sweet Child O\' Mine', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'November Rain', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Patience', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Paradise City', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Welcome to the Jungle', artist: 'Guns N\' Roses', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       tired: [
-        { title: 'Dreams', artist: 'Fleetwood Mac' },
-        { title: 'Sunflower', artist: 'Post Malone' },
-        { title: 'Blinding Lights', artist: 'The Weeknd' },
-        { title: 'Uptown Funk', artist: 'Mark Ronson' },
-        { title: 'Happy', artist: 'Pharrell Williams' },
-        { title: 'Can\'t Stop the Feeling', artist: 'Justin Timberlake' },
-        { title: 'Shake It Off', artist: 'Taylor Swift' },
-        { title: 'Levitating', artist: 'Dua Lipa' },
-        { title: 'Good 4 U', artist: 'Olivia Rodrigo' },
-        { title: 'Driver\'s License', artist: 'Olivia Rodrigo' },
-        { title: 'Deja Vu', artist: 'Olivia Rodrigo' },
-        { title: 'vampire', artist: 'Olivia Rodrigo' },
-        { title: 'bad idea right?', artist: 'Olivia Rodrigo' },
-        { title: 'Flowers', artist: 'Miley Cyrus' },
-        { title: 'Wrecking Ball', artist: 'Miley Cyrus' },
-        { title: 'Party in the U.S.A.', artist: 'Miley Cyrus' },
-        { title: 'We Can\'t Stop', artist: 'Miley Cyrus' },
-        { title: 'Malibu', artist: 'Miley Cyrus' },
-        { title: 'Angels Like You', artist: 'Miley Cyrus' },
-        { title: 'Midnight Sky', artist: 'Miley Cyrus' },
-        { title: 'I Got You', artist: 'James Brown' },
-        { title: 'Get Up (I Feel Like Being a) Sex Machine', artist: 'James Brown' },
-        { title: 'It\'s a Man\'s Man\'s Man\'s World', artist: 'James Brown' },
-        { title: 'Papa\'s Got a Brand New Bag', artist: 'James Brown' },
-        { title: 'Living in America', artist: 'James Brown' },
-        { title: 'Superstition', artist: 'Stevie Wonder' },
-        { title: 'Isn\'t She Lovely', artist: 'Stevie Wonder' },
-        { title: 'Signed, Sealed, Delivered I\'m Yours', artist: 'Stevie Wonder' },
-        { title: 'I Wish', artist: 'Stevie Wonder' },
-        { title: 'You Are the Sunshine of My Life', artist: 'Stevie Wonder' }
+        { title: 'Dreams', artist: 'Fleetwood Mac', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Sunflower', artist: 'Post Malone', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Blinding Lights', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Uptown Funk', artist: 'Mark Ronson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Happy', artist: 'Pharrell Williams', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Can\'t Stop the Feeling', artist: 'Justin Timberlake', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Shake It Off', artist: 'Taylor Swift', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Levitating', artist: 'Dua Lipa', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Good 4 U', artist: 'Olivia Rodrigo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Driver\'s License', artist: 'Olivia Rodrigo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Deja Vu', artist: 'Olivia Rodrigo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'vampire', artist: 'Olivia Rodrigo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'bad idea right?', artist: 'Olivia Rodrigo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Flowers', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Wrecking Ball', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Party in the U.S.A.', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'We Can\'t Stop', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Malibu', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Angels Like You', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Midnight Sky', artist: 'Miley Cyrus', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Got You', artist: 'James Brown', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Get Up (I Feel Like Being a) Sex Machine', artist: 'James Brown', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'It\'s a Man\'s Man\'s Man\'s World', artist: 'James Brown', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Papa\'s Got a Brand New Bag', artist: 'James Brown', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Living in America', artist: 'James Brown', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Superstition', artist: 'Stevie Wonder', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Isn\'t She Lovely', artist: 'Stevie Wonder', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Signed, Sealed, Delivered I\'m Yours', artist: 'Stevie Wonder', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Wish', artist: 'Stevie Wonder', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'You Are the Sunshine of My Life', artist: 'Stevie Wonder', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       lonely: [
-        { title: 'Here Comes the Sun', artist: 'The Beatles' },
-        { title: 'Space Oddity', artist: 'David Bowie' },
-        { title: 'Life on Mars?', artist: 'David Bowie' },
-        { title: 'Heroes', artist: 'David Bowie' },
-        { title: 'Starman', artist: 'David Bowie' },
-        { title: 'Let\'s Dance', artist: 'David Bowie' },
-        { title: 'Modern Love', artist: 'David Bowie' },
-        { title: 'Changes', artist: 'David Bowie' },
-        { title: 'Young Americans', artist: 'David Bowie' },
-        { title: 'Golden Years', artist: 'David Bowie' },
-        { title: 'Ashes to Ashes', artist: 'David Bowie' },
-        { title: 'Under Pressure', artist: 'Queen & David Bowie' },
-        { title: 'Bohemian Rhapsody', artist: 'Queen' },
-        { title: 'Don\'t Stop Me Now', artist: 'Queen' },
-        { title: 'We Will Rock You', artist: 'Queen' },
-        { title: 'We Are the Champions', artist: 'Queen' },
-        { title: 'Another One Bites the Dust', artist: 'Queen' },
-        { title: 'Crazy Little Thing Called Love', artist: 'Queen' },
-        { title: 'I Want to Break Free', artist: 'Queen' },
-        { title: 'Killer Queen', artist: 'Queen' },
-        { title: 'Somebody to Love', artist: 'Queen' },
-        { title: 'Radio Ga Ga', artist: 'Queen' },
-        { title: 'Who Wants to Live Forever', artist: 'Queen' },
-        { title: 'The Show Must Go On', artist: 'Queen' },
-        { title: 'Under Pressure', artist: 'Queen & David Bowie' },
-        { title: 'Bicycle Race', artist: 'Queen' },
-        { title: 'Fat Bottomed Girls', artist: 'Queen' },
-        { title: 'Flash', artist: 'Queen' },
-        { title: 'Hammer to Fall', artist: 'Queen' },
-        { title: 'I Want It All', artist: 'Queen' }
+        { title: 'Here Comes the Sun', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Space Oddity', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Life on Mars?', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Heroes', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Starman', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Let\'s Dance', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Modern Love', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Changes', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Young Americans', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Golden Years', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Ashes to Ashes', artist: 'David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Under Pressure', artist: 'Queen & David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Bohemian Rhapsody', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Don\'t Stop Me Now', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'We Will Rock You', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'We Are the Champions', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Another One Bites the Dust', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Crazy Little Thing Called Love', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Want to Break Free', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Killer Queen', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Somebody to Love', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Radio Ga Ga', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Who Wants to Live Forever', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Show Must Go On', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Under Pressure', artist: 'Queen & David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Bicycle Race', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Fat Bottomed Girls', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Flash', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hammer to Fall', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Want It All', artist: 'Queen', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       irritated: [
-        { title: 'In the Air Tonight', artist: 'Phil Collins' },
-        { title: 'Another Day in Paradise', artist: 'Phil Collins' },
-        { title: 'You Can\'t Hurry Love', artist: 'Phil Collins' },
-        { title: 'Easy Lover', artist: 'Phil Collins' },
-        { title: 'Sussudio', artist: 'Phil Collins' },
-        { title: 'Against All Odds', artist: 'Phil Collins' },
-        { title: 'Separate Lives', artist: 'Phil Collins' },
-        { title: 'A Groovy Kind of Love', artist: 'Phil Collins' },
-        { title: 'Two Hearts', artist: 'Phil Collins' },
-        { title: 'Do You Remember', artist: 'Phil Collins' },
-        { title: 'Dancing in the Street', artist: 'Mick Jagger & David Bowie' },
-        { title: 'Mickey', artist: 'Toni Basil' },
-        { title: 'Wake Me Up Before You Go-Go', artist: 'Wham!' },
-        { title: 'Careless Whisper', artist: 'George Michael' },
-        { title: 'Faith', artist: 'George Michael' },
-        { title: 'Freedom! \'90', artist: 'George Michael' },
-        { title: 'Father Figure', artist: 'George Michael' },
-        { title: 'Last Christmas', artist: 'Wham!' },
-        { title: 'Club Tropicana', artist: 'Wham!' },
-        { title: 'Young Guns (Go for It!)', artist: 'Wham!' },
-        { title: 'Bad Boys', artist: 'Wham!' },
-        { title: 'Everything She Wants', artist: 'Wham!' },
-        { title: 'I\'m Your Man', artist: 'Wham!' },
-        { title: 'The Edge of Heaven', artist: 'Wham!' },
-        { title: 'Take On Me', artist: 'a-ha' },
-        { title: 'Hunting High and Low', artist: 'a-ha' },
-        { title: 'The Sun Always Shines on T.V.', artist: 'a-ha' },
-        { title: 'Cry Wolf', artist: 'a-ha' },
-        { title: 'Manhattan Skyline', artist: 'a-ha' },
-        { title: 'I\'ve Been Losing You', artist: 'a-ha' }
+        { title: 'In the Air Tonight', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Another Day in Paradise', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'You Can\'t Hurry Love', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Easy Lover', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Sussudio', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Against All Odds', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Separate Lives', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'A Groovy Kind of Love', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Two Hearts', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Do You Remember', artist: 'Phil Collins', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Dancing in the Street', artist: 'Mick Jagger & David Bowie', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Mickey', artist: 'Toni Basil', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Wake Me Up Before You Go-Go', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Careless Whisper', artist: 'George Michael', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Faith', artist: 'George Michael', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Freedom! \'90', artist: 'George Michael', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Father Figure', artist: 'George Michael', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Last Christmas', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Club Tropicana', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Young Guns (Go for It!)', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Bad Boys', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Everything She Wants', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I\'m Your Man', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Edge of Heaven', artist: 'Wham!', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Take On Me', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hunting High and Low', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Sun Always Shines on T.V.', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Cry Wolf', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Manhattan Skyline', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I\'ve Been Losing You', artist: 'a-ha', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       lost: [
-        { title: 'Rise Up', artist: 'Andra Day' },
-        { title: 'Fight Song', artist: 'Rachel Platten' },
-        { title: 'Roar', artist: 'Katy Perry' },
-        { title: 'Firework', artist: 'Katy Perry' },
-        { title: 'California Gurls', artist: 'Katy Perry' },
-        { title: 'Dark Horse', artist: 'Katy Perry' },
-        { title: 'Teenage Dream', artist: 'Katy Perry' },
-        { title: 'Last Friday Night', artist: 'Katy Perry' },
-        { title: 'E.T.', artist: 'Katy Perry' },
-        { title: 'The One That Got Away', artist: 'Katy Perry' },
-        { title: 'Part of Me', artist: 'Katy Perry' },
-        { title: 'Wide Awake', artist: 'Katy Perry' },
-        { title: 'Chained to the Rhythm', artist: 'Katy Perry' },
-        { title: 'Swish Swish', artist: 'Katy Perry' },
-        { title: 'Hey Hey Hey', artist: 'Katy Perry' },
-        { title: 'Never Really Over', artist: 'Katy Perry' },
-        { title: 'Small Talk', artist: 'Katy Perry' },
-        { title: 'Harleys in Hawaii', artist: 'Katy Perry' },
-        { title: 'Never Worn White', artist: 'Katy Perry' },
-        { title: 'Daisies', artist: 'Katy Perry' },
-        { title: 'Smile', artist: 'Katy Perry' },
-        { title: 'Only Love', artist: 'Katy Perry' },
-        { title: 'Electric', artist: 'Katy Perry' },
-        { title: 'When I\'m Gone', artist: 'Katy Perry' },
-        { title: 'Resilient', artist: 'Katy Perry' },
-        { title: 'What Makes a Woman', artist: 'Katy Perry' },
-        { title: 'Teary Eyes', artist: 'Katy Perry' },
-        { title: 'Not the End of the World', artist: 'Katy Perry' },
-        { title: 'Cry About It Later', artist: 'Katy Perry' },
-        { title: 'Tucked', artist: 'Katy Perry' }
+        { title: 'Rise Up', artist: 'Andra Day', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Fight Song', artist: 'Rachel Platten', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Roar', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Firework', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'California Gurls', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Dark Horse', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Teenage Dream', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Last Friday Night', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'E.T.', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The One That Got Away', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Part of Me', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Wide Awake', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Chained to the Rhythm', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Swish Swish', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Hey Hey Hey', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Never Really Over', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Small Talk', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Harleys in Hawaii', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Never Worn White', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Daisies', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Smile', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Only Love', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Electric', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'When I\'m Gone', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Resilient', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'What Makes a Woman', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Teary Eyes', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Not the End of the World', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Cry About It Later', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Tucked', artist: 'Katy Perry', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       happy: [
-        { title: 'Good as Hell', artist: 'Lizzo' },
-        { title: 'About Damn Time', artist: 'Lizzo' },
-        { title: 'Juice', artist: 'Lizzo' },
-        { title: 'Truth Hurts', artist: 'Lizzo' },
-        { title: '2 Be Loved', artist: 'Lizzo' },
-        { title: 'Cuz I Love You', artist: 'Lizzo' },
-        { title: 'Like a Girl', artist: 'Lizzo' },
-        { title: 'Soulmate', artist: 'Lizzo' },
-        { title: 'Jerome', artist: 'Lizzo' },
-        { title: 'Crybaby', artist: 'Lizzo' },
-        { title: 'Uptown Funk', artist: 'Mark Ronson' },
-        { title: 'Locked Out of Heaven', artist: 'Bruno Mars' },
-        { title: '24K Magic', artist: 'Bruno Mars' },
-        { title: 'That\'s What I Like', artist: 'Bruno Mars' },
-        { title: 'Versace on the Floor', artist: 'Bruno Mars' },
-        { title: 'Just the Way You Are', artist: 'Bruno Mars' },
-        { title: 'Grenade', artist: 'Bruno Mars' },
-        { title: 'The Lazy Song', artist: 'Bruno Mars' },
-        { title: 'It Will Rain', artist: 'Bruno Mars' },
-        { title: 'When I Was Your Man', artist: 'Bruno Mars' },
-        { title: 'Treasure', artist: 'Bruno Mars' },
-        { title: 'Count on Me', artist: 'Bruno Mars' },
-        { title: 'Marry You', artist: 'Bruno Mars' },
-        { title: 'Runaway Baby', artist: 'Bruno Mars' },
-        { title: 'Talking to the Moon', artist: 'Bruno Mars' },
-        { title: 'Moonshine', artist: 'Bruno Mars' },
-        { title: 'Finesse', artist: 'Bruno Mars' },
-        { title: 'Gorilla', artist: 'Bruno Mars' },
-        { title: 'Natalie', artist: 'Bruno Mars' },
-        { title: 'Show Me', artist: 'Bruno Mars' }
+        { title: 'Good as Hell', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'About Damn Time', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Juice', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Truth Hurts', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: '2 Be Loved', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Cuz I Love You', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Like a Girl', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Soulmate', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Jerome', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Crybaby', artist: 'Lizzo', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Uptown Funk', artist: 'Mark Ronson', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Locked Out of Heaven', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: '24K Magic', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'That\'s What I Like', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Versace on the Floor', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Just the Way You Are', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Grenade', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Lazy Song', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'It Will Rain', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'When I Was Your Man', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Treasure', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Count on Me', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Marry You', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Runaway Baby', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Talking to the Moon', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Moonshine', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Finesse', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Gorilla', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Natalie', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Show Me', artist: 'Bruno Mars', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       peaceful: [
-        { title: 'Here Comes the Sun', artist: 'The Beatles' },
-        { title: 'Golden Slumbers', artist: 'The Beatles' },
-        { title: 'Something', artist: 'The Beatles' },
-        { title: 'Let It Be', artist: 'The Beatles' },
-        { title: 'Across the Universe', artist: 'The Beatles' },
-        { title: 'In My Life', artist: 'The Beatles' },
-        { title: 'Yesterday', artist: 'The Beatles' },
-        { title: 'A Day in the Life', artist: 'The Beatles' },
-        { title: 'Blackbird', artist: 'The Beatles' },
-        { title: 'While My Guitar Gently Weeps', artist: 'The Beatles' },
-        { title: 'Norwegian Wood', artist: 'The Beatles' },
-        { title: 'Eleanor Rigby', artist: 'The Beatles' },
-        { title: 'Michelle', artist: 'The Beatles' },
-        { title: 'Girl', artist: 'The Beatles' },
-        { title: 'And I Love Her', artist: 'The Beatles' },
-        { title: 'If I Fell', artist: 'The Beatles' },
-        { title: 'Things We Said Today', artist: 'The Beatles' },
-        { title: 'I\'ll Be Back', artist: 'The Beatles' },
-        { title: 'No Reply', artist: 'The Beatles' },
-        { title: 'Baby, I\'m Yours', artist: 'Arctic Monkeys' },
-        { title: 'Do I Wanna Know?', artist: 'Arctic Monkeys' },
-        { title: 'R U Mine?', artist: 'Arctic Monkeys' },
-        { title: 'Why\'d You Only Call Me When You\'re High?', artist: 'Arctic Monkeys' },
-        { title: 'Snap Out of It', artist: 'Arctic Monkeys' },
-        { title: 'One for the Road', artist: 'Arctic Monkeys' },
-        { title: 'Arabella', artist: 'Arctic Monkeys' },
-        { title: 'I Want It All', artist: 'Arctic Monkeys' },
-        { title: 'Knee Socks', artist: 'Arctic Monkeys' },
-        { title: 'Fireside', artist: 'Arctic Monkeys' },
-        { title: 'No.1 Party Anthem', artist: 'Arctic Monkeys' }
+        { title: 'Here Comes the Sun', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Golden Slumbers', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Something', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Let It Be', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Across the Universe', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'In My Life', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Yesterday', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'A Day in the Life', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Blackbird', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'While My Guitar Gently Weeps', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Norwegian Wood', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Eleanor Rigby', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Michelle', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Girl', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'And I Love Her', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'If I Fell', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Things We Said Today', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I\'ll Be Back', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'No Reply', artist: 'The Beatles', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Baby, I\'m Yours', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Do I Wanna Know?', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'R U Mine?', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Why\'d You Only Call Me When You\'re High?', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Snap Out of It', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'One for the Road', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Arabella', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Want It All', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Knee Socks', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Fireside', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'No.1 Party Anthem', artist: 'Arctic Monkeys', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ],
       satisfied: [
-        { title: 'Best Day of My Life', artist: 'American Authors' },
-        { title: 'Shut Up and Dance', artist: 'Walk the Moon' },
-        { title: 'Can\'t Feel My Face', artist: 'The Weeknd' },
-        { title: 'Starboy', artist: 'The Weeknd' },
-        { title: 'Blinding Lights', artist: 'The Weeknd' },
-        { title: 'Save Your Tears', artist: 'The Weeknd' },
-        { title: 'Die For You', artist: 'The Weeknd' },
-        { title: 'The Hills', artist: 'The Weeknd' },
-        { title: 'Earned It', artist: 'The Weeknd' },
-        { title: 'I Feel It Coming', artist: 'The Weeknd' },
-        { title: 'Call Out My Name', artist: 'The Weeknd' },
-        { title: 'After Hours', artist: 'The Weeknd' },
-        { title: 'In Your Eyes', artist: 'The Weeknd' },
-        { title: 'Less Than Zero', artist: 'The Weeknd' },
-        { title: 'Is There Someone Else?', artist: 'The Weeknd' },
-        { title: 'I Heard You\'re Married', artist: 'The Weeknd' },
-        { title: 'Take My Breath', artist: 'The Weeknd' },
-        { title: 'Moth to a Flame', artist: 'Swedish House Mafia & The Weeknd' },
-        { title: 'One Right Now', artist: 'Post Malone & The Weeknd' },
-        { title: 'The Idol: Vol. 1', artist: 'The Weeknd' },
-        { title: 'Gasoline', artist: 'The Weeknd' },
-        { title: 'How Do I Make You Love Me?', artist: 'The Weeknd' },
-        { title: 'Here We Go... Again', artist: 'The Weeknd' },
-        { title: 'Don\'t Break My Heart', artist: 'The Weeknd' },
-        { title: 'Popular', artist: 'The Weeknd' },
-        { title: 'Dawn FM', artist: 'The Weeknd' },
-        { title: 'After Hours Til Dawn', artist: 'The Weeknd' },
-        { title: 'Live at SoFi Stadium', artist: 'The Weeknd' },
-        { title: 'After Hours (Remixes)', artist: 'The Weeknd' },
-        { title: 'The Highlights', artist: 'The Weeknd' }
+        { title: 'Best Day of My Life', artist: 'American Authors', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Shut Up and Dance', artist: 'Walk the Moon', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Can\'t Feel My Face', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Starboy', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Blinding Lights', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Save Your Tears', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Die For You', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Hills', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Earned It', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Feel It Coming', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Call Out My Name', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'After Hours', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'In Your Eyes', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Less Than Zero', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Is There Someone Else?', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'I Heard You\'re Married', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Take My Breath', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Moth to a Flame', artist: 'Swedish House Mafia & The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'One Right Now', artist: 'Post Malone & The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Idol: Vol. 1', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Gasoline', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'How Do I Make You Love Me?', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Here We Go... Again', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Don\'t Break My Heart', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Popular', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Dawn FM', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'After Hours Til Dawn', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'Live at SoFi Stadium', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'After Hours (Remixes)', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] },
+        { title: 'The Highlights', artist: 'The Weeknd', alternatives: [{ artist: 'Boyce Avenue' }, { artist: 'Our Last Night' }, { artist: 'The Piano Guys' }] }
       ]
     };
 
@@ -1167,31 +1168,77 @@
       return 'https://music.163.com/#/search/m/?s=' + query;
     }
     
-    function openNeteaseLink(title, artist, event) {
+    function openNeteaseLink(song, event) {
+      const { title, artist } = song;
+      
       if (isMobileDevice()) {
         event.preventDefault();
         
-        // 移动端：优先尝试唤起 APP
-        const deepLink = 'orpheus://search?keyword=' + encodeURIComponent(title + ' ' + artist);
-        const mobileWebUrl = 'https://music.163.com/m/search?search_type=1&s=' + encodeURIComponent(title + ' ' + artist);
+        // 构建搜索关键词
+        const searchText = title + ' ' + artist;
+        const query = encodeURIComponent(searchText);
         
-        // 尝试打开深度链接
-        window.location.href = deepLink;
+        // 移动端网页搜索链接（尝试多种能自动搜索的格式）
+        const mobileWebUrls = [
+          'https://music.163.com/#/search/m/?s=' + query,  // 电脑端格式
+          'https://y.music.163.com/m/search?keyword=' + query,  // y.music子域名
+          'https://music.163.com/m/search/search_type=1&s=' + query
+        ];
         
-        // 设置超时，如果 APP 唤起失败则打开移动端网页
+        // 尝试多种deeplink格式
+        const deepLinks = [
+          'orpheus://search?keyword=' + query,
+          'orpheus://router/search?keyword=' + query,
+          'neteasecloudmusic://search?keyword=' + query,
+          'orpheus://www/search?keyword=' + query
+        ];
+        
+        let linkIndex = 0;
+        let webLinkIndex = 0;
+        const tryNextLink = () => {
+          if (linkIndex < deepLinks.length) {
+            try {
+              window.location.href = deepLinks[linkIndex];
+              linkIndex++;
+              // 每种格式尝试800ms
+              setTimeout(tryNextLink, 800);
+            } catch (e) {
+              linkIndex++;
+              tryNextLink();
+            }
+          } else {
+            // 所有deeplink都失败，依次尝试网页版链接
+            tryNextWebLink();
+          }
+        };
+        
+        const tryNextWebLink = () => {
+          if (webLinkIndex < mobileWebUrls.length) {
+            window.location.href = mobileWebUrls[webLinkIndex];
+            webLinkIndex++;
+            // 每种网页链接尝试1秒
+            setTimeout(tryNextWebLink, 1000);
+          }
+        };
+        
+        // 开始尝试deeplink
+        tryNextLink();
+        
+        // 2.5秒后强制打开第一个网页链接作为兜底
         setTimeout(() => {
-          window.location.href = mobileWebUrl;
-        }, 1500);
+          window.location.href = mobileWebUrls[0];
+        }, 2500);
         
         return false;
       }
-      // 电脑端：保持原有逻辑，让链接正常在新标签页打开
+      // 电脑端：保持原有逻辑
       return true;
     }
     
-    function getNeteaseDisplayUrl(title, artist) {
+    function getNeteaseDisplayUrl(song) {
+      const { title, artist } = song;
       if (isMobileDevice()) {
-        return 'javascript:void(0)'; // 移动端用 JS 处理
+        return 'javascript:void(0)';
       }
       return getNeteaseSearchUrl(title, artist);
     }
@@ -1344,7 +1391,7 @@
     let showAllSongs = false;
     let currentSongs = [];
 
-    // ========== renderSongs 适配新跳转逻辑 ========== 开始修改位置2
+    // ========== renderSongs 适配新跳转逻辑（支持歌曲ID） ========== 开始修改位置2
     function renderSongs(songs, showAll = false) {
       currentSongs = songs;
       showAllSongs = showAll;
@@ -1352,12 +1399,16 @@
       const displaySongs = showAll ? songs : songs.slice(0, 5);
       
       container.innerHTML = displaySongs.map((song, index) => {
-        const url = getNeteaseDisplayUrl(song.title, song.artist);
+        const url = getNeteaseDisplayUrl(song);
         const liked = isFavorite(song, 'songs');
         const isMobile = isMobileDevice();
+        
+        // 安全地序列化歌曲对象用于 onclick 调用
+        const safeSongData = JSON.stringify(song).replace(/"/g, '&quot;');
         const linkAttrs = isMobile 
-          ? `href="${url}" onclick="return openNeteaseLink('${song.title.replace(/'/g, "\\'")}', '${song.artist.replace(/'/g, "\\'")}', event)"`
+          ? `href="${url}" onclick="return openNeteaseLink(JSON.parse('${safeSongData}'), event)"`
           : `href="${getNeteaseSearchUrl(song.title, song.artist)}" target="_blank" rel="noopener noreferrer"`;
+          
         return `
           <div class="card rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 fade-in song-card-mobile" style="animation-delay: ${index * 0.05}s;">
             <div class="song-icon">
@@ -1377,7 +1428,8 @@
               </span>
               <a ${linkAttrs}
                 class="text-xs whitespace-nowrap rounded-lg px-3 py-1.5 link-btn flex-1 sm:flex-initial text-center"
-                style="border: 1px solid var(--border-light); display: inline-block; background: var(--tag-bg);">
+                style="border: 1px solid var(--border-light); display: inline-block; background: var(--tag-bg);"
+              >
                 去网易云
               </a>
             </div>
@@ -1385,7 +1437,7 @@
         `;
       }).join('');
     }
-    // ========== renderSongs 适配新跳转逻辑 ========== 结束修改位置2
+    // ========== renderSongs 适配新跳转逻辑（支持歌曲ID） ========== 结束修改位置2
 
     function toggleSongFavorite(index) {
       const song = currentSongs[index];
