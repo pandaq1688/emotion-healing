@@ -1,0 +1,68 @@
+<!--pages/trend/trend.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="section-title">📈 心情趋势</view>
+    
+    <view wx:if="{{last30Days.length === 0}}" class="empty-state">
+      <text class="empty-text">还没有心情数据…</text>
+      <text class="empty-subtitle">去「发现治愈」页面记录今天的心情吧！</text>
+    </view>
+    
+    <view wx:else>
+      <!-- 统计概览 -->
+      <view class="stats-grid">
+        <view class="stat-card">
+          <text class="stat-value">{{last30Days.length}}</text>
+          <text class="stat-label">记录天数</text>
+        </view>
+        <view class="stat-card">
+          <text class="stat-value">{{positiveCount}}</text>
+          <text class="stat-label">正向天数</text>
+        </view>
+        <view class="stat-card">
+          <text class="stat-value">{{streak}}</text>
+          <text class="stat-label">连续记录</text>
+        </view>
+        <view class="stat-card">
+          <text class="stat-value">{{topMood}}</text>
+          <text class="stat-label">常见心情</text>
+        </view>
+      </view>
+      
+      <!-- 日历 -->
+      <view class="calendar">
+        <view class="calendar-header">
+          <text class="month-label">{{currentMonth}}</text>
+          <view class="calendar-nav">
+            <text class="nav-btn" bindtap="prevMonth">◀</text>
+            <text class="nav-btn" bindtap="nextMonth">▶</text>
+          </view>
+        </view>
+        <view class="weekdays">
+          <text wx:for="{{weekdays}}" wx:key="*this" class="weekday">{{item}}</text>
+        </view>
+        <view class="calendar-grid">
+          <view wx:for="{{calendarDays}}" wx:key="date" 
+                class="calendar-day {{item.hasRecord ? 'has-record' : ''}} {{item.isToday ? 'today' : ''}} {{item.otherMonth ? 'other-month' : ''}}"
+                style="background-color: {{item.color}}">
+            {{item.day}}
+          </view>
+        </view>
+        <view class="legend">
+          <view class="legend-item">
+            <view class="legend-color" style="background: #C8E6C9;"></view>
+            <text>正向</text>
+          </view>
+          <view class="legend-item">
+            <view class="legend-color" style="background: #FFE0B2;"></view>
+            <text>中性</text>
+          </view>
+          <view class="legend-item">
+            <view class="legend-color" style="background: #FFCDD2;"></view>
+            <text>负向</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

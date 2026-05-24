@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/record/record",
+    "pages/trend/trend"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F7F3EE",
+    "navigationBarTitleText": "情绪治愈馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7A7A",
+    "selectedColor": "#8BB8CC",
+    "backgroundColor": "#F7F3EE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现治愈"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "心情记录"
+      },
+      {
+        "pagePath": "pages/trend/trend",
+        "text": "趋势分析"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

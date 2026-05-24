@@ -1,0 +1,112 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 每日心情记录 -->
+  <view class="card mb-20">
+    <view class="section-title">🌟 记录你今天的心情</view>
+    <view class="mood-selector">
+      <view 
+        wx:for="{{moods}}" 
+        wx:key="id"
+        class="mood-option {{selectedMood === item.id ? 'selected' : ''}}"
+        bindtap="selectMood"
+        data-id="{{item.id}}"
+      >
+        <text class="mood-emoji">{{item.emoji}}</text>
+        <text class="mood-label">{{item.label}}</text>
+      </view>
+    </view>
+    <view class="mt-20">
+      <button class="btn-primary" bindtap="saveDailyMood">✨ 保存今日心情</button>
+    </view>
+  </view>
+
+  <!-- 心情输入 -->
+  <view class="card mb-20">
+    <view class="section-title">你现在的心情是…</view>
+    <view class="input-section">
+      <input 
+        class="mood-input" 
+        placeholder="例如：抑郁、难过、焦虑、疲惫…" 
+        value="{{inputValue}}"
+        bindinput="handleInput"
+      />
+      <button class="btn-primary" bindtap="searchMood">🔍 寻找治愈</button>
+    </view>
+    <view class="quick-tags mt-20">
+      <text class="quick-label">快捷选择：</text>
+      <text 
+        wx:for="{{quickMoods}}" 
+        wx:key="*this"
+        class="tag"
+        bindtap="quickSelect"
+        data-mood="{{item}}"
+      >
+        {{item}}
+      </text>
+    </view>
+  </view>
+
+  <!-- 推荐结果 -->
+  <view wx:if="{{showResult}}">
+    <view class="card mb-20">
+      <view class="result-header">
+        <text class="result-emoji">{{resultEmoji}}</text>
+        <view>
+          <view class="result-title">「{{currentMood}}」· 为你推荐</view>
+          <view class="result-subtitle">检测到你的情绪偏向「{{categoryLabel}}」</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 歌曲推荐 -->
+    <view class="card mb-20">
+      <view class="section-title">🎵 治愈歌曲</view>
+      <view class="songs-list">
+        <view wx:for="{{displaySongs}}" wx:key="title" class="song-item">
+          <view class="song-icon">♫</view>
+          <view class="song-info">
+            <view class="song-title">{{item.title}}</view>
+            <view class="song-artist">{{item.artist}}</view>
+          </view>
+          <view class="song-actions">
+            <text 
+              class="heart-icon {{item.liked ? 'active' : ''}}"
+              bindtap="toggleLike"
+              data-type="song"
+              data-index="{{index}}"
+            >{{item.liked ? '❤️' : '🤍'}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="see-more" bindtap="toggleSongs">
+        {{showAllSongs ? '收起' : '查看更多'}}
+      </view>
+    </view>
+
+    <!-- 书籍推荐 -->
+    <view class="card">
+      <view class="section-title">📚 治愈书籍</view>
+      <view class="books-list">
+        <view wx:for="{{books}}" wx:key="title" class="book-item">
+          <view class="book-icon">📖</view>
+          <view class="book-info">
+            <view class="book-title">{{item.title}}</view>
+            <view class="book-author">{{item.author}}</view>
+            <view class="book-reason">
+              <text>{{item.reason}}</text>
+            </view>
+            <button class="copy-btn" bindtap="copyBook" data-title="{{item.title}}" data-author="{{item.author}}">复制书名</button>
+          </view>
+          <view class="book-actions">
+            <text 
+              class="heart-icon {{item.liked ? 'active' : ''}}"
+              bindtap="toggleLike"
+              data-type="book"
+              data-index="{{index}}"
+            >{{item.liked ? '❤️' : '🤍'}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

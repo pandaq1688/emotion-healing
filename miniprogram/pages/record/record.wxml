@@ -1,0 +1,30 @@
+<!--pages/record/record.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="section-header">
+      <text class="section-title">📅 心情记录</text>
+      <text wx:if="{{history.length > 0}}" class="clear-btn" bindtap="clearAll">清空记录</text>
+    </view>
+    
+    <view wx:if="{{history.length === 0}}" class="empty-state">
+      <text class="empty-text">还没有心情记录…</text>
+      <text class="empty-subtitle">去「发现治愈」页面记录今天的心情吧！</text>
+    </view>
+    
+    <view wx:else class="history-list">
+      <view wx:for="{{history}}" wx:key="id" class="history-item">
+        <view class="history-content">
+          <view class="history-header">
+            <text class="history-emoji">{{item.emoji}}</text>
+            <view class="history-info">
+              <text class="history-mood">{{item.mood}}</text>
+              <text class="history-category">{{item.category}}</text>
+            </view>
+          </view>
+          <text class="history-time">{{item.time}}</text>
+        </view>
+        <view class="delete-btn" bindtap="deleteItem" data-id="{{item.id}}">✕</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,158 @@
+/* pages/trend/trend.wxss */
+
+.container {
+  padding: 30rpx;
+  background: #F7F3EE;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #3D3D3D;
+  margin-bottom: 30rpx;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 120rpx 0;
+}
+
+.empty-text {
+  display: block;
+  font-size: 32rpx;
+  color: #7A7A7A;
+  margin-bottom: 12rpx;
+}
+
+.empty-subtitle {
+  display: block;
+  font-size: 24rpx;
+  color: #A8A8A8;
+}
+
+/* 统计网格 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #EEF4F8, #E8F4F8);
+  padding: 32rpx 24rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  border: 2rpx solid rgba(139, 184, 204, 0.3);
+}
+
+.stat-value {
+  display: block;
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 8rpx;
+}
+
+.stat-label {
+  display: block;
+  font-size: 24rpx;
+  color: #7A7A7A;
+}
+
+/* 日历 */
+.calendar {
+  background: #F9F9F9;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.month-label {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #3D3D3D;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 16rpx;
+}
+
+.nav-btn {
+  font-size: 28rpx;
+  color: #7A7A7A;
+  padding: 4rpx 12rpx;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8rpx;
+  margin-bottom: 16rpx;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 24rpx;
+  color: #A8A8A8;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8rpx;
+  margin-bottom: 24rpx;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: #7A7A7A;
+  background: #EEF4F8;
+  border-radius: 8rpx;
+}
+
+.calendar-day.other-month {
+  opacity: 0.3;
+}
+
+.calendar-day.today {
+  border: 3rpx solid #8BB8CC;
+}
+
+.calendar-day.has-record {
+  color: white;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 32rpx;
+  padding-top: 24rpx;
+  border-top: 1px solid #EDE6DF;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 22rpx;
+  color: #7A7A7A;
+}
+
+.legend-color {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 4rpx;
+}
